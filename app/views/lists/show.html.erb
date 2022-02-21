@@ -17,6 +17,3 @@
   <br>
   <%= link_to "Add a bookmark",  new_list_bookmark_path(@list), class: "btn btn-success" %>
  <%= link_to "delete this list", list_path(@list), method: :delete, class: "btn btn-cancel", data: { confirm: "Are you sure you want to delete this list?" } %>
-
- <div><%= cl_image_tag @list.photo.key, height: 300, width: 400, crop: :fill %></div>
-</div>
